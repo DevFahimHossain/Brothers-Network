@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Brother's Network</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Network Support" name="keywords">
+    <meta content="Network Solution" name="description">
+
+    <!-- Favicon -->
+    <link type="image/x-icon" href="assets/images/611242931_2434880783602313_9069042051745005352_n.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    /* Tailwind config to match brand */
+    tailwind.config = {
+      theme: {
+        container: { center: true, padding: "1rem" },
+        extend: {
+          colors: {
+            brand: "#484472",
+            accent: "#cb578f",
+            bg: "#f6f6fb",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .button-wrapper::before {
+      animation: spin-gradient 4s linear infinite;
+    }
+
+    @keyframes spin-gradient {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+    <!-- Navbar & Carousel Start -->
+      <div id="app" class=" flex flex-col">
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200/60">
+      <div class="container max-w-7xl">
+        <div class="flex items-center justify-between shadow-lg py-4 gap-4">
+          <a href="index.html" class="flex items-center gap-3">
+           <img class="w-[50px]" src="assets/images/611242931_2434880783602313_9069042051745005352_n.jpg" alt="Logo"/>
+            <span class="text-lg font-semibold text-brand">Brother's Network</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-8 text-[15px]">
+            <a href="index.html" class="text-slate-700 hover:text-brand">Home</a>
+            <a href="index.html" class="text-slate-700 hover:text-brand">About Us</a>
+            <a href="index.html" class="text-slate-700 hover:text-brand">Package</a>
+            <a href="payment.html" class="text-slate-700 hover:text-brand">Pay Bill</a>
+            <a href="index.html" class="text-slate-700 hover:text-brand">Contact</a>
+          </nav>
+          <div class="hidden md:flex items-center gap-3">
+            <div class="relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 active:scale-100 before:content-[''] before:absolute before:inset-0 before:bg-[conic-gradient(from_0deg,_#00F5FF,_#00F5FF30,_#00F5FF)] button-wrapper">
+              <button class="relative z-10 bg-gray-800 text-white rounded-full px-8 py-3 font-medium text-sm">Pay Bill</button>
+            </div>
+          </div>
+          <!-- Mobile menu button -->
+          <button data-mobile-toggle class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-300 text-slate-700">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+          </button>
+        </div>
+        <div data-mobile-menu class="md:hidden hidden border-t border-slate-200/70">
+          <nav class="flex flex-col py-3">
+            <a href="index.html" class="px-2 py-2 text-slate-700 hover:text-brand">Home</a>
+            <a href="index.html" class="px-2 py-2 text-slate-700 hover:text-brand">About Us</a>
+            <a href="index.html" class="px-2 py-2 text-slate-700 hover:text-brand">Package</a>
+            <a href="payment.html" class="px-2 py-2 text-slate-700 hover:text-brand">Pay Bill</a>
+            <a href="index.html" class="px-2 py-2 text-slate-700 hover:text-brand">Contact</a>
+            <!-- Mobile Pay Bill Button -->
+            <div class="mt-4 px-2">
+              <div class="relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 active:scale-100 before:content-[''] before:absolute before:inset-0 before:bg-[conic-gradient(from_0deg,_#00F5FF,_#00F5FF30,_#00F5FF)] button-wrapper">
+                <button class="relative z-10 bg-gray-800 text-white rounded-full px-8 py-3 font-medium text-sm w-full">Pay Bill</button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    </div> 
+
+
+    <!-- Navbar End -->
+
+
+
+    
+	<!-- Payment Start -->
+   
+        <center>
+            <img src="assets/images/paymentbanner.png" alt="" style="height:600px;  display:block; margin-left:auto; margin-right:auto;">
+            </br></br>
+            <p class=" flex justify-center gap-2 font-semibold">
+                <input type="checkbox" id="agreeCheckbox">
+                 I read and agree to the <span class="text-blue-600"><a href="terms-conditions.html" target="_blank">Terms & Conditions</a></span>
+            </p>
+        </center>
+    </div>
+    </br>
+    <div class=" flex justify-center gap-4 mb-10">
+            <button class="rounded py-3 px-3 bg-indigo-500 hover:bg-indigo-700 ...">Back Home</button>
+            <a href="" target="_blank">
+                <button id="payButton" disabled class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                    Pay Now
+                </button>
+            </a>
+    </div>
+	
+    <!-- Payment Start -->
+ 
+
+
+
+     <!-- SSL Banner Start -->
+		<center><img src="assets/images/PaymentChannelsFooterSSL.png" alt="" style="height:150px; width:1500px; align:center;"></center>
+    <!-- SSl Banner End -->   
+
+    <!-- Footer Start -->
+<footer id="contact" class="bg-slate-950 text-slate-300">
+      <div class="container max-w-7xl py-14">
+        <div class="grid gap-10 md:grid-cols-4">
+          <div>
+            <div class="flex items-center gap-3">
+             <a href=""><img class="w-[40px]" src="assets/images/611242931_2434880783602313_9069042051745005352_n.jpg" alt="Logo"/></a>
+              <span class=" text-2xl font-semibold">Brother's Network</span>
+            </div>
+            <p class="mt-4 text-xl text-white leading-relaxed text-slate-400">
+              Md. Zewel Rana <br> Shandiara Bazar-7020<br/>Kumarkhali Kushtia
+            <br>01723242541 , 09639109541</p>
+            <div class="mt-4 flex items-center gap-3">
+
+
+              <a href="https://www.facebook.com/people/Brothers-network/61586164259898/" target="_blank" class="text-slate-400 hover:text-white" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M22 12a10 10 0 1 0-11.56 9.9v-7H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.43 2.9h-2.27v7A10 10 0 0 0 22 12"/></svg>
+              </a>
+              <a href="https://www.youtube.com/@danshadigitalnetwork4465" target="_blank" class="text-slate-400 hover:text-white" aria-label="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M23.5 6.2a3 3 0 0 0-2-2c-1.8-.5-9.5-.5-9.5-.5s-7.7 0-9.5.5a3 3 0 0 0-2 2A31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8 3 3 0 0 0 2 2c1.8.5 9.5.5 9.5.5s7.7 0 9.5-.5a3 3 0 0 0 2-2A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.8ZM9.5 15.5v-7l6 3.5-6 3.5Z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white">Get in Touch</h4>
+            <p class="mt-3 text-slate-400 text-sm"><a class="underline decoration-slate-600 hover:text-white" href="mailto:#">jualstar@gmail.com</a></p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white">Learn More</h4>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li><a class="hover:text-white" href="https://ddnnetwork.tnrsoft.xyz/Term/home" target="_blank">Terms of Use</a></li>
+              <li><a class="hover:text-white" href="https://ddnnetwork.tnrsoft.xyz/Privacy/home" target="_blank">Privacy Policy</a></li>
+              <li><a class="hover:text-white" href="https://ddnnetwork.tnrsoft.xyz/Refund/home" target="_blank">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white">Our Newsletter</h4>
+            <p class="mt-3 text-slate-400 text-sm">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+            <form id="newsletter-form" class="mt-4 flex gap-2" action="#" method="post">
+              <input type="email" required placeholder="Email Address" class="w-full rounded-lg bg-slate-800/60 border border-slate-700 px-3 py-2 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-accent"/>
+              <button type="submit" class="rounded-lg bg-brand px-4 py-2 text-white hover:bg-accent">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-slate-800 pt-6 text-sm">
+          <p class="text-slate-400">© 2026 Brothers Network - All rights reserved (Made By : <a href="https://nspbd.net/index.html" target="_blank" class="hover:text-white text-blue-500">NSP</a>)</p>
+          <p class="text-slate-500">Trade Licence Number : 092</p>
+        </div>
+      
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+   
+
+      <!-- Mobile Menu JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileToggle = document.querySelector('[data-mobile-toggle]');
+      const mobileMenu = document.querySelector('[data-mobile-menu]');
+      
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+          // Change icon when menu is open
+          const isHidden = mobileMenu.classList.contains('hidden');
+          const svg = this.querySelector('svg');
+          if (isHidden) {
+            // Menu closed - show hamburger icon
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+          } else {
+            // Menu open - show X icon
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>';
+          }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+          if (!mobileToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+            mobileMenu.classList.add('hidden');
+            const svg = mobileToggle.querySelector('svg');
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+          }
+        });
+        
+        // Close menu when clicking a link inside it
+        mobileMenu.querySelectorAll('a, button').forEach(item => {
+          item.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            const svg = mobileToggle.querySelector('svg');
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+          });
+        });
+      }
+    });
+  </script>
+
+  <!-- Checkbox and Button Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get elements for checkbox and pay button
+      const agreeCheckbox = document.getElementById('agreeCheckbox');
+      const payButton = document.getElementById('payButton');
+      
+      // Function to update button state
+      function updateButtonState() {
+        if (agreeCheckbox.checked) {
+          payButton.disabled = false;
+          payButton.classList.remove('disabled:opacity-50', 'disabled:cursor-not-allowed');
+          payButton.classList.add('hover:bg-green-700', 'transition');
+        } else {
+          payButton.disabled = true;
+          payButton.classList.add('disabled:opacity-50', 'disabled:cursor-not-allowed');
+          payButton.classList.remove('hover:bg-green-700', 'transition');
+        }
+      }
+      
+      // Initial state
+      updateButtonState();
+      
+      // Add event listener to checkbox
+      agreeCheckbox.addEventListener('change', updateButtonState);
+      
+      // Handle Pay Now button click
+      payButton.addEventListener('click', function(e) {
+        if (this.disabled || !agreeCheckbox.checked) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (!agreeCheckbox.checked) {
+            alert('Please agree to the Terms & Conditions first by checking the box.');
+          }
+          return false;
+        }
+        // If checkbox is checked, the link will work normally
+      });
+      
+      // Newsletter form submission handler
+      const newsletterForm = document.getElementById('newsletter-form');
+      
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault(); // Prevent page reload
+          
+          const emailInput = this.querySelector('input[type="email"]');
+          const email = emailInput.value.trim();
+          
+          // Basic email validation
+          if (!email || !email.includes('@') || !email.includes('.')) {
+            alert('Please enter a valid email address.');
+            return;
+          }
+          
+          // Here you would typically send the email to your backend
+          console.log('Subscribing email:', email);
+          
+          // Show success message
+          alert('Thank you for subscribing to our newsletter!');
+          
+          // Clear the input
+          emailInput.value = '';
+        });
+      }
+      
+      // Add Back Home button functionality
+      const backHomeButton = document.querySelector('.bg-indigo-500');
+      if (backHomeButton) {
+        backHomeButton.addEventListener('click', function() {
+          window.location.href = 'index.html';
+        });
+      }
+    });
+  </script>
+
+  <script crossorigin="anonymous" src="//unpkg.com/same-runtime/dist/index.global.js"></script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
