@@ -2,12 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brothers Network</title>
-  <meta name="description" content="Village-Dansha192 • Shandiara Bazar 7020 • Kumarkhali • Kushtia" />
+    <meta charset="utf-8">
+    <title>Brother's Network</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Network Support" name="keywords">
+    <meta content="Network Solution" name="description">
 
-  <link rel="icon" type="image/png" href="assets/images/611242931_2434880783602313_9069042051745005352_n.jpg" />
+    <!-- Favicon -->
+    <link type="image/x-icon" href="assets/images/611242931_2434880783602313_9069042051745005352_n.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     /* Tailwind config to match brand */
@@ -41,22 +48,24 @@
   </style>
 </head>
 
-<body class="antialiased text-slate-800">
-  <div id="app" class="min-h-screen flex flex-col">
+<body>
+
+    <!-- Navbar & Carousel Start -->
+      <div id="app" class=" flex flex-col">
     <!-- Top Navigation -->
     <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200/60">
       <div class="container max-w-7xl">
         <div class="flex items-center justify-between shadow-lg py-4 gap-4">
-          <a href="#" class="flex items-center gap-3">
+          <a href="index.html" class="flex items-center gap-3">
            <img class="w-[50px]" src="assets/images/611242931_2434880783602313_9069042051745005352_n.jpg" alt="Logo"/>
             <span class="text-lg font-semibold text-brand">Brother's Network</span>
           </a>
           <nav class="hidden md:flex items-center gap-8 text-[15px]">
-            <a href="#" class="text-slate-700 hover:text-brand">Home</a>
+            <a href="index.html" class="text-slate-700 hover:text-brand">Home</a>
             <a href="about.html" class="text-slate-700 hover:text-brand">About Us</a>
-            <a href="package.html" class="text-slate-700 hover:text-brand">Package</a>
+            <a href="index.html" class="text-slate-700 hover:text-brand">Package</a>
             <a href="payment.html" class="text-slate-700 hover:text-brand">Pay Bill</a>
-            <a href="contact.html" class="text-slate-700 hover:text-brand">Contact</a>
+            <a href="index.html" class="text-slate-700 hover:text-brand">Contact</a>
           </nav>
           <div class="hidden md:flex items-center gap-3">
            <a href="payment.html"> <div class="relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 active:scale-100 before:content-[''] before:absolute before:inset-0 before:bg-[conic-gradient(from_0deg,_#00F5FF,_#00F5FF30,_#00F5FF)] button-wrapper">
@@ -72,14 +81,14 @@
         </div>
         <div data-mobile-menu class="md:hidden hidden border-t border-slate-200/70">
           <nav class="flex flex-col py-3">
-            <a href="#" class="px-2 py-2 text-slate-700 hover:text-brand">Home</a>
+            <a href="index.html" class="px-2 py-2 text-slate-700 hover:text-brand">Home</a>
             <a href="about.html" class="px-2 py-2 text-slate-700 hover:text-brand">About Us</a>
-            <a href="package.html" class="px-2 py-2 text-slate-700 hover:text-brand">Package</a>
+            <a href="index.html" class="px-2 py-2 text-slate-700 hover:text-brand">Package</a>
             <a href="payment.html" class="px-2 py-2 text-slate-700 hover:text-brand">Pay Bill</a>
-            <a href="contact.html" class="px-2 py-2 text-slate-700 hover:text-brand">Contact</a>
+            <a href="index.html" class="px-2 py-2 text-slate-700 hover:text-brand">Contact</a>
             <!-- Mobile Pay Bill Button -->
             <div class="mt-4 px-2">
-              <a href="payment.html">              <div class="relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 active:scale-100 before:content-[''] before:absolute before:inset-0 before:bg-[conic-gradient(from_0deg,_#00F5FF,_#00F5FF30,_#00F5FF)] button-wrapper">
+             <a href="payment.html"> <div class="relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 active:scale-100 before:content-[''] before:absolute before:inset-0 before:bg-[conic-gradient(from_0deg,_#00F5FF,_#00F5FF30,_#00F5FF)] button-wrapper">
                 <button class="relative z-10 bg-gray-800 text-white rounded-full px-8 py-3 font-medium text-sm w-full">Pay Bill</button>
               </div></a>
             </div>
@@ -87,60 +96,9 @@
         </div>
       </div>
     </header>
+    </div> 
 
-    <main class="flex-1">
-      <!-- Hero -->
-      <section class="bg-gradient-to-r from-[#e8eaff] via-[#f9f9ff] to-[#ffdff3] shadow-lg">
-        <div class="container max-w-7xl py-16 md:py-20">
-          <div class="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h1 class="text-3xl md:text-5xl font-semibold tracking-tight text-slate-900">
-                Brother's Network solutions for worldwide communication
-              </h1>
-              <p class="mt-4 text-lg text-slate-600">Internet Service Provider</p>
-              <div class="mt-8 flex items-center gap-3">
-                <style>
-    @keyframes rotate {
-        100% {
-            transform: rotate(1turn);
-        }
-    }
-
-    .rainbow::before {
-        content: '';
-        position: absolute;
-        z-index: -2;
-        left: -50%;
-        top: -50%;
-        width: 200%;
-        height: 200%;
-        background-position: 100% 50%;
-        background-repeat: no-repeat;
-        background-size: 50% 30%;
-        filter: blur(6px);
-        background-image: linear-gradient(#2a9fe2);
-        animation: rotate 4s linear infinite;
-    }
-</style>
-<div class="rainbow relative z-0 bg-white/15 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100">
-    <button class="px-8 text-sm py-3 text-white rounded-full font-medium bg-gray-900/80 backdrop-blur">
-        Explore More
-    </button>
-</div>
-              </div>
-            </div>
-            <div class="relative">
-              <video class="w-full border-0 max-w-xl mx-auto autoplay loop muted playsinline" autoplay loop muted playsinline>
-                <source src="assets/video/video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Features -->
-      <section id="features" class="py-16 bg-gradient-to-r from-[#ffffff] via-[#f9fafb] to-[#e5e7eb]">
+          <section id="features" class="py-16 bg-gradient-to-r from-[#ffffff] via-[#f9fafb] to-[#e5e7eb]">
         <div class="container max-w-7xl">
           <h2 class="text-3xl font-semibold text-center  text-black">Our Features</h2>
           <p class="mt-2 text-center text-slate-600">The service we offer is specifically designed to meet your needs.</p>
@@ -230,108 +188,16 @@
           </div>
         </div>
       </section>
+   
 
 
+ 
 
 
+ 
 
-      <!-- some new -->
-       
-
-      <!-- Pricing -->
-
-
-      <section id="pricing" class="py-16 bg-bg/60">
-        <div class="container max-w-4xl">
-          <h2 class="text-4xl font-semibold text-center text-slate-900 text-black">Our Pricing</h2>
-          <p class="mt-2 text-center text-slate-600">We offer great prices, premium products and quality service for your business.</p>
-          <div class="mt-10 grid gap-6 md:grid-cols-3">
-            <!-- Card 1 -->
-            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg hover:shadow-2xl transition">
-              <h3 class="text-xl font-semibold  text-black"><span class="text-3xl  ">500</span>tk <br>10Mbps 30Day</h3>
-              
-              <ul class="mt-4 space-y-2 text-slate-700 text-sm">
-                <li>• Unlimited Volume</li>
-                <li>• 10 Mbps Internet Speed</li>
-                <li>• 10 Mbps Uploads</li>
-                <li>• 70 Mbps Facebook</li>
-                <li>• 70 Mbps Youtube</li>
-                <li>• Validity 30 Days</li>
-              </ul>
-              <a href="payment.html" class="mt-6 inline-flex rounded-lg bg-brand px-4 py-2 text-white hover:bg-accent">Select Plan</a>
-            </article>
-            <!-- Card 2 -->
-            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg hover:shadow-2xl transition">
-              <h3 class="text-xl font-semibold text-black"><span class="text-3xl  ">700</span>tk  <br>15Mbps 30Day</h3>
-              
-              <ul class="mt-4 space-y-2 text-slate-700 text-sm">
-                <li>• Unlimited Volume</li>
-                <li>• 15 Mbps Internet Speed</li>
-                <li>• 15 Mbps Uploads</li>
-                <li>• 100 Mbps Facebook</li>
-                <li>• 100 Mbps Youtube</li>
-                <li>• Validity 30 Days</li>
-              </ul>
-              <a href="payment.html" class="mt-6 inline-flex rounded-lg bg-brand px-4 py-2 text-white hover:bg-accent">Select Plan</a>
-            </article>
-            <!-- Card 3 -->
-            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg hover:shadow-2xl transition">
-              <h3 class="text-xl font-semibold text-black"><span class="text-3xl  ">900</span>tk  <br>20Mbps 30Day</h3>
-              <ul class="mt-4 space-y-2 text-slate-700 text-sm">
-                <li>• Unlimited Volume</li>
-                <li>• 20 Mbps Internet Speed</li>
-                <li>• 20 Mbps Uploads</li>
-                <li>• 100 Mbps Facebook</li>
-                <li>• 100 Mbps Youtube</li>
-                <li>• Validity 30 Days</li>
-              </ul>
-              <a href="payment.html" class="mt-6 inline-flex rounded-lg bg-brand px-4 py-2 text-white hover:bg-accent">Select Plan</a>
-            </article>
-          </div>
-          <div class="mt-8 text-center">
-            <a href="" target="_blank" class="inline-flex items-center gap-2 text-brand hover:text-accent font-medium">
-         <style>
-    @keyframes rotate {
-        100% {
-            transform: rotate(1turn);
-        }
-    }
-
-    .rainbow::before {
-        content: '';
-        position: absolute;
-        z-index: -2;
-        left: -50%;
-        top: -50%;
-        width: 200%;
-        height: 200%;
-        background-position: 100% 50%;
-        background-repeat: no-repeat;
-        background-size: 50% 30%;
-        filter: blur(6px);
-        background-image: linear-gradient(#2a9fe2);
-        animation: rotate 4s linear infinite;
-    }
-</style>
-<div class="rainbow relative z-0 bg-white/15 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100">
-    <button class="px-8 text-sm py-3 text-white rounded-full font-medium bg-gray-900/80 backdrop-blur">
-        Show All Packages
-    </button>
-</div>
-
-
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- PaymentChannelsFooterSSLComTrustSeal -->
-        <a href=""><img src="assets/images/PaymentChannelsFooterSSL.png" alt=""></a>
-
-    <!-- Footer -->
-    
-    <footer id="contact" class="bg-slate-950 text-slate-300">
+    <!-- Footer Start -->
+<footer id="contact" class="bg-slate-950 text-slate-300">
       <div class="container max-w-7xl py-14">
         <div class="grid gap-10 md:grid-cols-4">
           <div>
@@ -381,9 +247,9 @@
       
       </div>
     </footer>
-  </div>
+    <!-- Footer End -->
 
-  <!-- Mobile Menu JavaScript -->
+      <!-- Mobile Menu JavaScript -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const mobileToggle = document.querySelector('[data-mobile-toggle]');
@@ -424,6 +290,8 @@
       }
     });
   </script>
+
+
 
   <script crossorigin="anonymous" src="//unpkg.com/same-runtime/dist/index.global.js"></script>
   <script type="module" src="/src/main.ts"></script>
