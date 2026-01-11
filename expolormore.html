@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About Us - Brother's Network</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Network Support" name="keywords">
+    <meta content="About Brother's Network - Reliable Internet Service Provider in Kumarkhali Kushtia" name="description">
+
+    <!-- Favicon -->
+    <link type="image/x-icon" href="assets/images/611242931_2434880783602313_9069042051745005352_n.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    /* Tailwind config to match brand */
+    tailwind.config = {
+      theme: {
+        container: { center: true, padding: "1rem" },
+        extend: {
+          colors: {
+            brand: "#484472",
+            accent: "#cb578f",
+            bg: "#f6f6fb",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .button-wrapper::before {
+      animation: spin-gradient 4s linear infinite;
+    }
+
+    @keyframes spin-gradient {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+    <!-- Navbar & Carousel Start -->
+      <div id="app" class=" flex flex-col">
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200/60">
+      <div class="container max-w-7xl">
+        <div class="flex items-center justify-between shadow-lg py-4 gap-4">
+          <a href="index.html" class="flex items-center gap-3">
+           <img class="w-[50px]" src="assets/images/611242931_2434880783602313_9069042051745005352_n.jpg" alt="Logo"/>
+            <span class="text-lg font-semibold text-brand">Brother's Network</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-8 text-[15px]">
+            <a href="index.html" class="text-slate-700 hover:text-brand">Home</a>
+            <a href="about.html" class="text-slate-700 hover:text-brand font-semibold">About Us</a>
+            <a href="package.html" class="text-slate-700 hover:text-brand">Package</a>
+            <a href="payment.html" class="text-slate-700 hover:text-brand">Pay Bill</a>
+            <a href="contact.html" class="text-slate-700 hover:text-brand">Contact</a>
+          </nav>
+          <div class="hidden md:flex items-center gap-3">
+           <a href="payment.html"> <div class="relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 active:scale-100 before:content-[''] before:absolute before:inset-0 before:bg-[conic-gradient(from_0deg,_#00F5FF,_#00F5FF30,_#00F5FF)] button-wrapper">
+              <button class="relative z-10 bg-gray-800 text-white rounded-full px-8 py-3 font-medium text-sm">Pay Bill</button>
+            </div></a>
+          </div>
+          <!-- Mobile menu button -->
+          <button data-mobile-toggle class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-300 text-slate-700">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+          </button>
+        </div>
+        <div data-mobile-menu class="md:hidden hidden border-t border-slate-200/70">
+          <nav class="flex flex-col py-3">
+            <a href="index.html" class="px-2 py-2 text-slate-700 hover:text-brand">Home</a>
+            <a href="about.html" class="px-2 py-2 text-slate-700 hover:text-brand font-semibold">About Us</a>
+            <a href="package.html" class="px-2 py-2 text-slate-700 hover:text-brand">Package</a>
+            <a href="payment.html" class="px-2 py-2 text-slate-700 hover:text-brand">Pay Bill</a>
+            <a href="contact.html" class="px-2 py-2 text-slate-700 hover:text-brand">Contact</a>
+            <!-- Mobile Pay Bill Button -->
+            <div class="mt-4 px-2">
+             <a href="payment.html"> <div class="relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 active:scale-100 before:content-[''] before:absolute before:inset-0 before:bg-[conic-gradient(from_0deg,_#00F5FF,_#00F5FF30,_#00F5FF)] button-wrapper">
+                <button class="relative z-10 bg-gray-800 text-white rounded-full px-8 py-3 font-medium text-sm w-full">Pay Bill</button>
+              </div></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    </div> 
+
+    <!-- Main Content -->
+    <main class="min-h-screen bg-gradient-to-b from-white to-slate-50">
+      <!-- Hero Section -->
+      <section class="pt-12 pb-8 md:pt-16 md:pb-12">
+        <div class="container max-w-7xl px-4">
+          <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About Brother's Network</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Connecting Kumarkhali, Kushtia with reliable, high-speed internet solutions since our inception.
+            </p>
+            <div class="flex justify-center mt-6">
+              <div class="w-32 h-1 bg-brand rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Article -->
+      <section class="py-8 md:py-12">
+        <div class="container max-w-7xl px-4">
+          <article class="bg-white rounded-2xl shadow-xl p-6 md:p-10 lg:p-12">
+            <div class="prose prose-lg max-w-none">
+              <p class="text-gray-700 text-lg mb-6">
+                In today's digital age, a reliable internet connection is no longer a luxury—it's a necessity. Brother's Network has emerged as a trusted internet service provider in Kumarkhali, Kushtia, bridging the digital divide and empowering local communities with high-speed, uninterrupted internet connectivity.
+              </p>
+              
+              <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-brand mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Mission & Vision</h2>
+                <p class="text-gray-700">
+                  At Brother's Network, our mission is simple: to provide affordable, reliable internet services that enable individuals, businesses, and educational institutions to thrive in the digital world. We envision a connected community where geographical limitations don't hinder growth, learning, or business opportunities.
+                </p>
+              </div>
+              
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">Why Choose Brother's Network?</h2>
+              
+              <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-f6f6fb p-6 rounded-xl border border-slate-200">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 bg-brand/20 rounded-lg flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Lightning-Fast Speeds</h3>
+                  </div>
+                  <p class="text-gray-700">Experience buffer-free streaming, seamless video calls, and instant downloads with our high-speed fiber optic network.</p>
+                </div>
+                
+                <div class="bg-f6f6fb p-6 rounded-xl border border-slate-200">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 bg-brand/20 rounded-lg flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">99.9% Uptime Guarantee</h3>
+                  </div>
+                  <p class="text-gray-700">Our robust infrastructure ensures minimal downtime, keeping you connected when it matters most.</p>
+                </div>
+                
+                <div class="bg-f6f6fb p-6 rounded-xl border border-slate-200">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 bg-brand/20 rounded-lg flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Local Support Team</h3>
+                  </div>
+                  <p class="text-gray-700">Our team of local technicians provides prompt, personalized support in your own language and community.</p>
+                </div>
+                
+                <div class="bg-f6f6fb p-6 rounded-xl border border-slate-200">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 bg-brand/20 rounded-lg flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Transparent Pricing</h3>
+                  </div>
+                  <p class="text-gray-700">No hidden charges or surprise bills. Choose from our straightforward packages designed for every need.</p>
+                </div>
+              </div>
+              
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Services</h2>
+              
+              <div class="mb-8">
+                <div class="grid md:grid-cols-3 gap-6">
+                  <div class="border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="text-brand text-4xl font-bold mb-2">Home</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Residential Internet</h3>
+                    <p class="text-gray-700">Perfect for streaming, gaming, remote work, and connecting multiple devices.</p>
+                  </div>
+                  
+                  <div class="border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="text-brand text-4xl font-bold mb-2">Business</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Corporate Solutions</h3>
+                    <p class="text-gray-700">Dedicated connections, static IPs, and priority support for businesses.</p>
+                  </div>
+                  
+                  <div class="border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="text-brand text-4xl font-bold mb-2">Edu</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Educational Packages</h3>
+                    <p class="text-gray-700">Special plans for students and educational institutions with added benefits.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Impact in the Community</h2>
+              
+              <p class="text-gray-700 mb-6">
+                Since our establishment, Brother's Network has been more than just an ISP—we've been a partner in progress for the Kumarkhali community. We've connected thousands of homes, supported local businesses in their digital transformation, and enabled students to access online learning resources without interruption.
+              </p>
+              
+              <!-- Stats Section -->
+              <div class="bg-gradient-to-r from-brand to-accent p-8 rounded-2xl text-white mb-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                  <div>
+                    <div class="text-3xl md:text-4xl font-bold mb-2">1000+</div>
+                    <div class="text-sm">Happy Customers</div>
+                  </div>
+                  <div>
+                    <div class="text-3xl md:text-4xl font-bold mb-2">99.9%</div>
+                    <div class="text-sm">Network Uptime</div>
+                  </div>
+                  <div>
+                    <div class="text-3xl md:text-4xl font-bold mb-2">24/7</div>
+                    <div class="text-sm">Support Available</div>
+                  </div>
+                  <div>
+                    <div class="text-3xl md:text-4xl font-bold mb-2">0</div>
+                    <div class="text-sm">Hidden Charges</div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- CTA Section -->
+              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 mb-8 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Ready to Get Connected?</h3>
+                <p class="text-gray-700 mb-6 max-w-2xl mx-auto">Join thousands of satisfied customers who trust Brother's Network for their internet needs.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="package.html" class="bg-brand text-white font-bold px-6 py-3 rounded-lg hover:bg-accent transition inline-flex items-center justify-center gap-2">
+                    View Our Packages
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </a>
+                  <a href="contact.html" class="bg-white border-2 border-brand text-brand font-bold px-6 py-3 rounded-lg hover:bg-brand hover:text-white transition">
+                    Contact Us Today
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Contact Info -->
+              <div class="border-t border-gray-200 pt-8">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                  <div class="w-20 h-20 bg-brand/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Visit Our Office</h3>
+                    <p class="text-gray-700">Shandiara Bazar-7020, Kumarkhali, Kushtia</p>
+                    <p class="text-gray-700 mt-1">
+                      <span class="font-semibold">Phone:</span> 01723242541, 09639109541<br>
+                      <span class="font-semibold">Email:</span> jualstar@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Start -->
+<footer id="contact" class="bg-slate-950 text-slate-300">
+      <div class="container max-w-7xl py-14">
+        <div class="grid gap-10 md:grid-cols-4">
+          <div>
+            <div class="flex items-center gap-3">
+             <a href="index.html"><img class="w-[40px]" src="assets/images/611242931_2434880783602313_9069042051745005352_n.jpg" alt="Logo"/></a>
+              <span class=" text-2xl font-semibold">Brother's Network</span>
+            </div>
+            <p class="mt-4 text-xl text-white leading-relaxed text-slate-400">
+              Md. Zewel Rana <br> Shandiara Bazar-7020<br/>Kumarkhali Kushtia
+            <br>01723242541 , 09639109541</p>
+            <div class="mt-4 flex items-center gap-3">
+              <a href="https://www.facebook.com/people/Brothers-network/61586164259898/" target="_blank" class="text-blue-500 hover:text-blue-500" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M22 12a10 10 0 1 0-11.56 9.9v-7H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.43 2.9h-2.27v7A10 10 0 0 0 22 12"/></svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white">Get in Touch</h4>
+            <p class="mt-3 text-slate-400 text-sm"><a class="underline decoration-slate-600 hover:text-white" href="mailto:jualstar@gmail.com">jualstar@gmail.com</a></p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white">Learn More</h4>
+           <ul class="mt-3 space-y-2 text-sm">
+              <li><a class="hover:text-white" href="terms-conditionspage.html" target="_blank">Terms of Use</a></li>
+              <li><a class="hover:text-white" href="privacy.html" target="_blank">Privacy Policy</a></li>
+              <li><a class="hover:text-white" href="refund.html" target="_blank">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white">Our Newsletter</h4>
+            <p class="mt-3 text-slate-400 text-sm">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+            <form id="newsletter-form" class="mt-4 flex gap-2" action="#" method="post">
+              <input type="email" required placeholder="Email Address" class="w-full rounded-lg bg-slate-800/60 border border-slate-700 px-3 py-2 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-accent"/>
+              <button type="submit" class="rounded-lg bg-brand px-4 py-2 text-white hover:bg-accent">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-slate-800 pt-6 text-sm">
+          <p class="text-slate-400">© 2026 Brothers Network - All rights reserved (Made By : <a href="https://nspbd.net/index.html" target="_blank" class="hover:text-white text-blue-500">NSP</a>)</p>
+          <p class="text-slate-500">Trade Licence Number : 092</p>
+        </div>
+      
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+      <!-- Mobile Menu JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileToggle = document.querySelector('[data-mobile-toggle]');
+      const mobileMenu = document.querySelector('[data-mobile-menu]');
+      
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+          // Change icon when menu is open
+          const isHidden = mobileMenu.classList.contains('hidden');
+          const svg = this.querySelector('svg');
+          if (isHidden) {
+            // Menu closed - show hamburger icon
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+          } else {
+            // Menu open - show X icon
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>';
+          }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+          if (!mobileToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+            mobileMenu.classList.add('hidden');
+            const svg = mobileToggle.querySelector('svg');
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+          }
+        });
+        
+        // Close menu when clicking a link inside it
+        mobileMenu.querySelectorAll('a, button').forEach(item => {
+          item.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            const svg = mobileToggle.querySelector('svg');
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+          });
+        });
+      }
+
+      // Newsletter form submission handler
+      const newsletterForm = document.getElementById('newsletter-form');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault(); // Prevent page reload
+          
+          const emailInput = this.querySelector('input[type="email"]');
+          const email = emailInput.value.trim();
+          
+          // Basic email validation
+          if (!email || !email.includes('@') || !email.includes('.')) {
+            alert('Please enter a valid email address.');
+            return;
+          }
+          
+          // Here you would typically send the email to your backend
+          console.log('Subscribing email:', email);
+          
+          // Show success message
+          alert('Thank you for subscribing to our newsletter!');
+          
+          // Clear the input
+          emailInput.value = '';
+        });
+      }
+    });
+  </script>
+
+  <script crossorigin="anonymous" src="//unpkg.com/same-runtime/dist/index.global.js"></script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
